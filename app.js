@@ -49,7 +49,7 @@ const main = () => {
   });
 
   // Baritone (pathfinder) yükle
-  bot.loadPlugin(pathfinder);
+  mineflayerPathfinder.pathfinder(bot, bot._client, {});;
 
   bot.once("spawn", async () => {
     // Baritone hareketlerini ayarla
