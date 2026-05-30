@@ -44,7 +44,7 @@ const main = () => {
   bot = mineflayer.createBot({
     host: "6b6t.org",
     username: config.username,
-    version: "1.18.1",
+    version: "1.21.5",
     skipValidation: true,
   });
 
