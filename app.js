@@ -1,7 +1,6 @@
 const fs = require("fs");
 const mineflayer = require("mineflayer");
-const mineflayerPathfinder = require("mineflayer-pathfinder");
-const { Movements, goals } = mineflayerPathfinder;
+const { pathfinder, Movements, goals } = require("mineflayer-pathfinder");
 let lobbyF = false;
 let bot;
 
@@ -50,7 +49,7 @@ const main = () => {
   });
 
   // Baritone (pathfinder) yükle
-  bot.loadPlugin(mineflayerPathfinder.pathfinder);
+  bot.loadPlugin(pathfinder);
 
   bot.once("spawn", async () => {
     // Baritone hareketlerini ayarla
@@ -129,3 +128,4 @@ const main = () => {
 };
 
 main();
+s
